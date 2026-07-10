@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Test</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2 style="margin-bottom: 40px;">CAREER ASSESSMENT TEST</h2>
+
+        <form id="quizForm">
+            <p>1. Which subject do you enjoy the most?</p>
+            <label><input type="radio" name="q1" value="technology"> Technology</label><br>
+            <label><input type="radio" name="q1" value="art"> Arts</label><br>
+            <label><input type="radio" name="q1" value="business"> Business</label><br>
+            <label><input type="radio" name="q1" value="science"> Science</label><br>
+            <label><input type="radio" name="q1" value="social"> Social Studies</label><br>
+
+            <p>2. What kind of work environment do you prefer?</p>
+            <label><input type="radio" name="q2" value="office"> Office setting</label><br>
+            <label><input type="radio" name="q2" value="outdoors"> Outdoors</label><br>
+            <label><input type="radio" name="q2" value="remote"> Remote/Work from home</label><br>
+
+            <p>3. Which activity excites you the most?</p>
+            <label><input type="radio" name="q3" value="building"> Building or coding something</label><br>
+            <label><input type="radio" name="q3" value="drawing"> Drawing or designing</label><br>
+            <label><input type="radio" name="q3" value="research"> Researching or analyzing data</label><br>
+            <label><input type="radio" name="q3" value="helping"> Helping people directly</label><br>
+
+            <p>4. Which skill do you want to develop?</p>
+            <label><input type="radio" name="q4" value="programming"> Programming</label><br>
+            <label><input type="radio" name="q4" value="writing"> Writing</label><br>
+            <label><input type="radio" name="q4" value="publicSpeaking"> Public Speaking</label><br>
+            <label><input type="radio" name="q4" value="projectManagement"> Project Management</label><br>
+
+            <p>5. How do you prefer solving problems?</p>
+            <label><input type="radio" name="q5" value="logical"> Logical steps</label><br>
+            <label><input type="radio" name="q5" value="creative"> Creative brainstorming</label><br>
+            <label><input type="radio" name="q5" value="collaborative"> Collaborative teamwork</label><br>
+            <label><input type="radio" name="q5" value="dataDriven"> Data-driven analysis</label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
